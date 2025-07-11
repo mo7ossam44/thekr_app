@@ -15,7 +15,7 @@ class GridViewBuilder extends StatelessWidget {
           crossAxisCount: 2, // عمودين
           mainAxisSpacing: 10,
           crossAxisSpacing: 5,
-          childAspectRatio: 2.8, // للتحكم في شكل المستطيل
+          childAspectRatio: 3.8, // للتحكم في شكل المستطيل
         ),
         itemCount: categoryModel.length,
         itemBuilder: (context, index) {
