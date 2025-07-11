@@ -15,15 +15,29 @@ class CategoryCard extends StatelessWidget {
           MaterialPageRoute(builder: (context) => categoryModel.targetPage),
         );
       },
-      child: Card(
-        color: Color(0xff222020),
-        child: ListTile(
-          trailing: Text(
-            categoryModel.name,
-            style: TextStyle(
-              fontFamily: kSecondaryFont,
-              fontSize: 16,
-              color: Color(0xff007D45),
+      child: Container(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(12),
+          gradient: LinearGradient(
+            colors: [Color(0xFFFFFF), kPrimaryColor],
+            begin: Alignment.centerLeft,
+            end: Alignment.centerRight,
+          ),
+        ),
+        padding: EdgeInsets.all(2), // السماكة الخارجية للحد
+        child: Container(
+          decoration: BoxDecoration(
+            color: Color(0xFF1C1C1C),
+            borderRadius: BorderRadius.circular(10),
+          ),
+          child: ListTile(
+            trailing: Text(
+              categoryModel.name,
+              style: TextStyle(
+                fontFamily: kSecondaryFont,
+                fontSize: 16,
+                color: Color(0xff007D45),
+              ),
             ),
           ),
         ),
@@ -31,4 +45,3 @@ class CategoryCard extends StatelessWidget {
     );
   }
 }
-
