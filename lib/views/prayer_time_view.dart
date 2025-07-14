@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:theker_app/widgets/custom_app_bar.dart';
+
+import 'package:theker_app/widgets/prayer_time_body.dart';
 
 class PrayerTimeView extends StatelessWidget {
   const PrayerTimeView({super.key});
@@ -9,7 +10,10 @@ class PrayerTimeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: CustomAppBarWidget(),
+      backgroundColor: Color(0xff1C1A1A),
+      body: SafeArea(child: PrayerTimeViewBody()),
     );
   }
 }
+
+
