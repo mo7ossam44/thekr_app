@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:theker_app/views/home_view.dart';
 import 'package:theker_app/views/on_boarding_view.dart';
+import 'package:theker_app/views/prayer_time_view.dart';
 import 'package:theker_app/views/quran_view.dart';
 import 'package:theker_app/views/splash_view.dart';
 import 'package:theker_app/views/surah_view.dart';
@@ -18,6 +18,8 @@ Route<dynamic> onGenerateRoute(RouteSettings settings) {
       return MaterialPageRoute(builder: (context) => const HomeView());
     case SurahView.routeName:
       return MaterialPageRoute(builder: (context) => const SurahView());
+    case PrayerTimeView.routeName:
+      return MaterialPageRoute(builder: (context) => const PrayerTimeView());
     default:
       return MaterialPageRoute(builder: (context) => const Scaffold());
   }
