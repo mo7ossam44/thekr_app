@@ -24,7 +24,7 @@ class SurahCardWidget extends StatelessWidget {
             Container(
               alignment: Alignment.center,
               decoration: BoxDecoration(
-                color: Colors.white.withOpacity(0.3),
+                color: Color(0xff373535),
                 borderRadius: BorderRadius.only(
                   bottomLeft: Radius.circular(8),
                   bottomRight: Radius.circular(8),
@@ -41,8 +41,8 @@ class SurahCardWidget extends StatelessWidget {
               surahModel.arabic,
               style: TextStyle(
                 color: Colors.white,
-                fontFamily: kSecondaryFont,
-                fontSize: 25,
+                fontFamily: 'KFGQPC',
+                fontSize: 30,
               ),
             ),
             //? Row of Surah info Container
@@ -52,9 +52,9 @@ class SurahCardWidget extends StatelessWidget {
                 Container(
                   padding: EdgeInsets.all(2),
                   alignment: Alignment.center,
-                  width: 60,
+                  width: 30,
                   decoration: BoxDecoration(
-                    color: Colors.white.withOpacity(0.3),
+                    color: Color(0xff373535),
                     borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(8),
                       topRight: Radius.circular(8),
@@ -65,16 +65,16 @@ class SurahCardWidget extends StatelessWidget {
                     style: TextStyle(
                       color: Colors.white,
                       fontFamily: kSecondaryFont,
-                      fontSize: 15,
+                      fontSize: 14,
                     ),
                   ),
                 ),
                 Container(
                   padding: EdgeInsets.all(2),
                   alignment: Alignment.center,
-                  width: 60,
+                  width: 70,
                   decoration: BoxDecoration(
-                    color: Colors.white.withOpacity(0.3),
+                    color: Color(0xff373535),
                     borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(8),
                       topRight: Radius.circular(8),
@@ -85,7 +85,7 @@ class SurahCardWidget extends StatelessWidget {
                     style: TextStyle(
                       color: Colors.white,
                       fontFamily: kSecondaryFont,
-                      fontSize: 15,
+                      fontSize: 14,
                     ),
                   ),
                 ),
