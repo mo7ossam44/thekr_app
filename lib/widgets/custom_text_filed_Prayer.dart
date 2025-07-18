@@ -2,9 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:theker_app/constants.dart';
 
 class CustomTextFiledPrayer extends StatelessWidget {
-  const CustomTextFiledPrayer({
-    super.key,
-  });
+  const CustomTextFiledPrayer({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -39,15 +37,13 @@ class CustomTextFiledPrayer extends StatelessWidget {
                   onPressed: () {},
                   icon: Icon(Icons.location_on),
                   iconSize: 20,
-                  color: Colors.white.withOpacity(0.4),
+                  color: Colors.white,
                 ),
               ],
             ),
           ],
         ),
-        border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(30),
-        ),
+        border: OutlineInputBorder(borderRadius: BorderRadius.circular(30)),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(30),
         ),

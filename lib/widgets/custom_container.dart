@@ -8,46 +8,51 @@ class CustomContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () {
-        Navigator.of(context).pushNamed(QuranView.routeName);
-      },
-      child: Container(
-        height: 60,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(12),
-          gradient: LinearGradient(
-            colors: [Color(0xFFFFFF), kPrimaryColor],
-            begin: Alignment.centerLeft,
-            end: Alignment.centerRight,
-          ),
-        ),
-        padding: EdgeInsets.all(2), // السماكة الخارجية للحد
-        child: Container(
-          decoration: BoxDecoration(
-            color: Color(0xFF1C1C1C),
-            borderRadius: BorderRadius.circular(10),
-          ),
-          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 14),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: [
-              Text(
-                'المصحف',
-                style: TextStyle(
-                  color: kPrimaryColor,
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
-                  fontFamily: kSecondaryFont,
-                ),
+    return SliverPadding(
+      padding: EdgeInsetsGeometry.symmetric(horizontal: 15),
+      sliver: SliverToBoxAdapter(
+        child: GestureDetector(
+          onTap: () {
+            Navigator.of(context).pushNamed(QuranView.routeName);
+          },
+          child: Container(
+            height: 60,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(12),
+              gradient: LinearGradient(
+                colors: [Color(0xFFFFFF), kPrimaryColor],
+                begin: Alignment.centerLeft,
+                end: Alignment.centerRight,
               ),
-              SizedBox(width: 10),
-              Image.asset(
-                'assets/images/categories_images/Moshaf.png',
-                color: kPrimaryColor,
-                width: 40,
+            ),
+            padding: EdgeInsets.all(2), // السماكة الخارجية للحد
+            child: Container(
+              decoration: BoxDecoration(
+                color: Color(0xff222020),
+                borderRadius: BorderRadius.circular(10),
               ),
-            ],
+              padding: EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  Text(
+                    'المصحف',
+                    style: TextStyle(
+                      color: kPrimaryColor,
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: kSecondaryFont,
+                    ),
+                  ),
+                  SizedBox(width: 10),
+                  Image.asset(
+                    'assets/images/categories_images/Moshaf.png',
+                    color: kPrimaryColor,
+                    width: 40,
+                  ),
+                ],
+              ),
+            ),
           ),
         ),
       ),

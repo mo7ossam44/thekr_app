@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:theker_app/constants.dart';
-import 'package:theker_app/models/prayer_time_model.dart';
-import 'package:theker_app/services/prayer_time_service.dart';
 import 'package:theker_app/widgets/before_prayer_time_container.dart';
 import 'package:theker_app/widgets/custom_app_bar.dart';
 import 'package:theker_app/widgets/custom_column_prayers.dart';
 import 'package:theker_app/widgets/custom_text_filed_Prayer.dart';
 import 'package:theker_app/widgets/month_widget.dart';
-
+import 'package:theker_app/widgets/prayer_hadith_container.dart';
 
 class PrayerTimeViewBody extends StatelessWidget {
   const PrayerTimeViewBody({super.key});
@@ -38,36 +35,8 @@ class PrayerTimeViewBody extends StatelessWidget {
           SizedBox(height: 30),
           PrayerTimeHadethContainer(),
           SizedBox(height: 30),
-          SizedBox(height: 50,child: CustomColumnPrayers()),
+          Expanded(child: CustomColumnPrayers()),
         ],
-      ),
-    );
-  }
-}
-
-class PrayerTimeHadethContainer extends StatelessWidget {
-  const PrayerTimeHadethContainer({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: EdgeInsets.symmetric(horizontal: 10, vertical: 15),
-      width: MediaQuery.of(context).size.width,
-      height: 120,
-      decoration: BoxDecoration(
-        color: Color(0xff141212),
-        borderRadius: BorderRadius.circular(12),
-      ),
-      child: Text(
-        kFajrHadth,
-        textDirection: TextDirection.rtl,
-        style: TextStyle(
-          color: Colors.white,
-          fontFamily: kSecondaryFont,
-          fontWeight: FontWeight.bold,
-          fontSize: 17,
-          height: 1.7,
-        ),
       ),
     );
   }

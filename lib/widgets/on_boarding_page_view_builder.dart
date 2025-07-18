@@ -16,7 +16,7 @@ class OnBoardingPageViewBuilder extends StatelessWidget {
       itemBuilder: (context, index) {
         return Column(
           children: [
-            CustomAppBarWidget(),
+            CustomAppBarWidget(text: 'تخطي'),
             Spacer(flex: 5),
             Image.asset(catygories[index].imagePath),
             SizedBox(height: 15),
