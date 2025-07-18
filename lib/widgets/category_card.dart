@@ -27,7 +27,7 @@ class CategoryCard extends StatelessWidget {
         padding: EdgeInsets.all(2), // السماكة الخارجية للحد
         child: Container(
           decoration: BoxDecoration(
-            color: Color(0xFF1C1C1C),
+            color: Color(0xff222020),
             borderRadius: BorderRadius.circular(10),
           ),
           child: ListTile(
@@ -35,7 +35,7 @@ class CategoryCard extends StatelessWidget {
               categoryModel.name,
               style: TextStyle(
                 fontFamily: kSecondaryFont,
-                fontSize: 16,
+                fontSize: 15,
                 color: Color(0xff007D45),
               ),
             ),
