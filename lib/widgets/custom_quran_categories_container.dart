@@ -37,7 +37,8 @@ class _CustomQuranCategoriesContainerState
           widget.text,
           style: TextStyle(
             color: isClicked ? kPrimaryColor : Colors.white,
-            fontFamily: kSecondaryFont,
+            fontFamily: 'KFGQPC',
+            fontSize: 18,
           ),
         ),
       ),
