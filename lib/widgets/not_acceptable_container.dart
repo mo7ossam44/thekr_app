@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:theker_app/constants.dart';
 

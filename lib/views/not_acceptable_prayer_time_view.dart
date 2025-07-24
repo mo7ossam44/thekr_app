@@ -14,7 +14,10 @@ class NotAcceptablePrayerTimeView extends StatelessWidget {
       appBar: AppBar(
         title: const Text(
           'اوقات النهي عن الصلاة',
-          style: TextStyle(fontFamily: kSecondaryFont),
+          style: TextStyle(
+            fontFamily: kSecondaryFont,
+            fontSize: kAppBarFontSize,
+          ),
         ),
         elevation: 0,
         backgroundColor: Colors.transparent,
@@ -27,4 +30,3 @@ class NotAcceptablePrayerTimeView extends StatelessWidget {
     );
   }
 }
-

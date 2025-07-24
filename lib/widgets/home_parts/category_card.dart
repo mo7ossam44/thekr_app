@@ -35,7 +35,7 @@ class CategoryCard extends StatelessWidget {
           child: Text(
             categoryModel.name,
             style: TextStyle(
-              fontFamily: kSecondaryFont, 
+              fontFamily: kSecondaryFont,
               fontSize: 15,
               color: Color(0xff007D45),
             ),

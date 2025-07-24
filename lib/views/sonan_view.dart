@@ -13,7 +13,7 @@ class SonanView extends StatelessWidget {
       appBar: AppBar(
         title: Text(
           'السنن الرواتب',
-          style: TextStyle(fontFamily: kSecondaryFont),
+          style: TextStyle(fontFamily: kSecondaryFont, fontSize: kAppBarFontSize),
         ),
         elevation: 0,
         backgroundColor: Colors.transparent,
