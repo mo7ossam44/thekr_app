@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:theker_app/models/morning_azkar_model.dart';
+import 'package:theker_app/models/azkar_model.dart';
 import 'package:theker_app/widgets/custom_azkar_container.dart';
 
-class MorningAzkarListViewBuilder extends StatelessWidget {
-  const MorningAzkarListViewBuilder({
+class AzkarListViewBuilder extends StatelessWidget {
+  const AzkarListViewBuilder({
     super.key,
     required this.data,
   });
 
-  final List<MorningAzkarModel> data;
+  final List<AzkarModel> data;
 
   @override
   Widget build(BuildContext context) {
