@@ -78,7 +78,9 @@ class _SingleZekerViewBodyState extends State<SingleZekerViewBody> {
                         repeatesCounter = widget.azkar.repratedTime;
                       });
                     },
-                    icon: Icon(Icons.repeat),
+                    icon: Image.asset(
+                      'assets/images/categories_images/ector.png',
+                    ),
                     color: Colors.white,
                   ),
                 ],
