@@ -3,15 +3,21 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hive_flutter/adapters.dart';
 import 'package:theker_app/constants.dart';
 import 'package:theker_app/core/helper_function.dart';
+import 'package:theker_app/cubits/add_zeker_cubit/add_zeker_cubit.dart';
 import 'package:theker_app/cubits/get_azkar_cubit/get_azkar_cubit.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:theker_app/cubits/zeker_cubit/zeker_cubit.dart';
+import 'package:theker_app/models/zeker_model.dart';
+import 'package:theker_app/simple_bloc_observer.dart';
+import 'package:theker_app/views/home_view.dart';
 import 'package:theker_app/views/splash_view.dart';
-
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Hive.initFlutter();
-  await Hive.openBox(kAzkarBox);
+  Hive.registerAdapter(ZekerModelAdapter());
+  await Hive.openBox<ZekerModel>(kAzkarBox);
+  Bloc.observer = SimpleBlocObserver();
   runApp(const ThkerApp());
 }
 
@@ -20,8 +26,11 @@ class ThkerApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return BlocProvider(
-      create: (context) => GetAzkarCubit(),
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider(create: (context) => ZekerCubit()),
+        BlocProvider(create: (context) => GetAzkarCubit()),
+      ],
       child: MaterialApp(
         locale: const Locale('ar'),
         supportedLocales: [Locale('ar')],
@@ -38,7 +47,7 @@ class ThkerApp extends StatelessWidget {
         ),
         debugShowCheckedModeBanner: false,
         onGenerateRoute: onGenerateRoute,
-        initialRoute: SplashView.routeName,
+        initialRoute: HomeView.routeName,
       ),
     );
   }
