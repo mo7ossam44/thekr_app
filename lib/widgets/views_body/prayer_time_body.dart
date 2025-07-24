@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:theker_app/constants.dart';
+import 'package:theker_app/views/not_acceptable_prayer_time_view.dart';
 import 'package:theker_app/views/sonan_view.dart';
 import 'package:theker_app/widgets/month_widget.dart';
 import 'package:theker_app/widgets/prayers_sliver_grid.dart';
@@ -49,7 +50,9 @@ class PrayerTimeViewBody extends StatelessWidget {
           ConatantHightWidget(height: kHight3),
           CustomContainerInPrayerPage(
             text: 'أوقات النهي عن الصلاة',
-            ontap: () {},
+            ontap: () => Navigator.of(
+              context,
+            ).pushNamed(NotAcceptablePrayerTimeView.routeName),
             icon: Icons.arrow_forward_ios_sharp,
           ),
         ],
