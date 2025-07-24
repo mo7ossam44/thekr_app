@@ -28,8 +28,10 @@ class CustomTextFiledAppBar extends StatelessWidget {
             borderRadius: BorderRadius.circular(40),
           ),
           child: Row(
-            mainAxisAlignment: MainAxisAlignment.end,
             children: [
+              SizedBox(width: 10),
+              Icon(Icons.search, color: Colors.white.withOpacity(0.4)),
+              SizedBox(width: 10),
               Text(
                 'ابحث عن سوره',
                 style: TextStyle(
@@ -37,9 +39,6 @@ class CustomTextFiledAppBar extends StatelessWidget {
                   fontFamily: kSecondaryFont,
                 ),
               ),
-              SizedBox(width: 10),
-              Icon(Icons.search, color: Colors.white.withOpacity(0.4)),
-              SizedBox(width: 10),
             ],
           ),
         ),
@@ -67,7 +66,7 @@ class CustomSearch extends SearchDelegate {
       TextStyle(color: Colors.white, fontSize: 18, fontFamily: kSecondaryFont);
 
   @override
-  String? get searchFieldLabel => '                   ابحث باسم السورة'; // Placeholder text
+  String? get searchFieldLabel => 'ابحث باسم السورة'; // Placeholder text
 
   final List<SurahModel> surah;
   List? filterSurah;
