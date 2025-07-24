@@ -19,7 +19,6 @@ class MonthWidget extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          Text(date, style: TextStyle(color: Colors.white)),
           Text(
             monthName,
             style: TextStyle(
@@ -29,6 +28,7 @@ class MonthWidget extends StatelessWidget {
               fontFamily: kSecondaryFont,
             ),
           ),
+          Text(date, style: TextStyle(color: Colors.white)),
         ],
       ),
     );

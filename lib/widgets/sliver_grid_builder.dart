@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:theker_app/models/category_model.dart';
-import 'package:theker_app/widgets/category_card.dart';
+import 'package:theker_app/widgets/home_parts/category_card.dart';
 
 class SliverGridBuilder extends StatelessWidget {
   const SliverGridBuilder({super.key, required this.categoryModel});

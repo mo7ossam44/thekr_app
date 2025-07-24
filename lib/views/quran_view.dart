@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:theker_app/widgets/quran_view_body.dart';
+import 'package:theker_app/widgets/views_body/quran_view_body.dart';
 
 class QuranView extends StatelessWidget {
   const QuranView({super.key});
