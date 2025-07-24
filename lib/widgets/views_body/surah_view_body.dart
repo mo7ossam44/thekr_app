@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:theker_app/constants.dart';
 
@@ -22,25 +21,33 @@ class SurahViewBody extends StatelessWidget {
           padding: EdgeInsets.zero,
           physics: NeverScrollableScrollPhysics(),
           children: [
-            SizedBox(height: 25),
+            SizedBox(height: 50),
             Image.asset(
               'assets/quran_assets/quran_images/${pageImagePath[index]}',
-              color: Colors.white,
-              height: MediaQuery.of(context).size.height * 0.93,
+              color: Colors.white.withOpacity(0.6),
+              height: MediaQuery.of(context).size.height * 0.88,
               fit: BoxFit.fill,
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20),
+              padding: const EdgeInsets.symmetric(horizontal: 25),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
                     surahName,
-                    style: TextStyle(fontFamily: kSecondaryFont, fontSize: 20),
+                    style: TextStyle(
+                      fontFamily: kSecondaryFont,
+                      fontSize: 20,
+                      color: Colors.white.withOpacity(0.6),
+                    ),
                   ),
                   Text(
                     'الصفحة ${index + 1}',
-                    style: TextStyle(fontFamily: kSecondaryFont, fontSize: 20),
+                    style: TextStyle(
+                      fontFamily: kSecondaryFont,
+                      fontSize: 20,
+                      color: Colors.white.withOpacity(0.6),
+                    ),
                   ),
                 ],
               ),
