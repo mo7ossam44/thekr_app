@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:theker_app/constants.dart';
 import 'package:theker_app/cubits/zeker_cubit/zeker_cubit.dart';
 import 'package:theker_app/cubits/zeker_cubit/zeker_states.dart';
 import 'package:theker_app/models/zeker_model.dart';
@@ -14,6 +15,24 @@ class AzkarCountSliverGridBuilder extends StatelessWidget {
       builder: (context, state) {
         if (state is ZekerLoaded) {
           List<ZekerModel> azkar = state.zeker;
+          if (azkar.isEmpty) {
+            return const SliverToBoxAdapter(
+              child: Center(
+                child: Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 30, vertical: 270),
+                  child: Text(
+                    'لا يوجد أذكار بعد، أضف بطاقة الآن!',
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.w500,
+                      color: Colors.grey,
+                      fontFamily: kSecondaryFont,
+                    ),
+                  ),
+                ),
+              ),
+            );
+          }
           return SliverPadding(
             padding: const EdgeInsets.all(16),
             sliver: SliverGrid(
