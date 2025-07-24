@@ -21,8 +21,6 @@ Route<dynamic> onGenerateRoute(RouteSettings settings) {
       return MaterialPageRoute(builder: (context) => const QuranView());
     case HomeView.routeName:
       return MaterialPageRoute(builder: (context) => const HomeView());
-    case SurahView.routeName:
-      return MaterialPageRoute(builder: (context) => const SurahView());
     case PrayerTimeView.routeName:
       return MaterialPageRoute(builder: (context) => const PrayerTimeView());
     case MorningAzkarView.routeName:
@@ -33,8 +31,6 @@ Route<dynamic> onGenerateRoute(RouteSettings settings) {
       return MaterialPageRoute(builder: (context) => const SonanView());
     case AzkarCountView.routeName:
       return MaterialPageRoute(builder: (context) => const AzkarCountView());
-    case SingleZekerView.routeName:
-      return MaterialPageRoute(builder: (context) => const SingleZekerView());
     default:
       return MaterialPageRoute(builder: (context) => const Scaffold());
   }
