@@ -4,6 +4,7 @@ class SurahModel {
   final String turkish;
   final int aya;
   final String place;
+  final int startPage;
 
   SurahModel({
     required this.id,
@@ -11,6 +12,7 @@ class SurahModel {
     required this.turkish,
     required this.aya,
     required this.place,
+    required this.startPage
   });
 
   factory SurahModel.fromJson(json) {
@@ -20,6 +22,7 @@ class SurahModel {
       turkish: json['turkish'] ?? '',
       aya: json['aya'] ?? 0,
       place: json['place'] ?? '',
+      startPage: json['startPage'] ?? '',
     );
   }
 }

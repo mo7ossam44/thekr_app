@@ -14,8 +14,7 @@ class PrayerTimeService {
       Response response = await dio.get(
         'https://api.aladhan.com/v1/calendarByCity/2025/7?city=$cityName&country=$countryName&method=5',
       );
-      List<PrayerTimeModel> prayers = PrayerTimeModel.fromJsonList(response.data);
-      return prayers;
+      return response.data;
     } catch (e) {
       log(e.toString());
       throw Exception('oops there was an error, tray again later!');
