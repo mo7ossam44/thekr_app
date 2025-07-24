@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:theker_app/constants.dart';
 import 'package:hive_flutter/adapters.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:theker_app/core/theme.dart';
 import 'package:theker_app/views/home_view.dart';
 import 'package:theker_app/models/zeker_model.dart';
 import 'package:theker_app/core/helper_function.dart';
@@ -37,12 +38,9 @@ class ThkerApp extends StatelessWidget {
           GlobalWidgetsLocalizations.delegate,
           GlobalCupertinoLocalizations.delegate,
         ],
-        theme: ThemeData(
-          brightness: Brightness.dark,
-          textSelectionTheme: TextSelectionThemeData(
-            cursorColor: Colors.white.withOpacity(0.4),
-          ),
-        ),
+        theme: lightTheme,
+        darkTheme: darkTheme,
+        themeMode: ThemeMode.dark,
         debugShowCheckedModeBanner: false,
         onGenerateRoute: onGenerateRoute,
         initialRoute: HomeView.routeName,
