@@ -6,15 +6,13 @@ import 'package:theker_app/models/prayer_time_model.dart';
 class PrayerTimeService {
   final dio = Dio();
 
-  Future<List<PrayerTimeModel>> getPrayerTimes({
-    required String countryName,
-    required String cityName,
-  }) async {
+  Future<PrayerTimeModel> getPrayerTimes() async {
     try {
       Response response = await dio.get(
-        'https://api.aladhan.com/v1/calendarByCity/2025/7?city=$cityName&country=$countryName&method=5',
+        'https://alquran.vip/APIs/getPrayerTimes',
       );
-      return response.data;
+      final data = PrayerTimeModel.fromJson(response.data);
+      return data;
     } catch (e) {
       log(e.toString());
       throw Exception('oops there was an error, tray again later!');

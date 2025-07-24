@@ -6,7 +6,7 @@ class CustomContainerInPrayerPage extends StatelessWidget {
     super.key,
     required this.text,
     required this.ontap,
-    required this.icon
+    required this.icon,
   });
 
   final String text;
@@ -20,7 +20,6 @@ class CustomContainerInPrayerPage extends StatelessWidget {
         onTap: ontap,
         child: Container(
           padding: EdgeInsets.symmetric(horizontal: 20),
-          margin: EdgeInsets.symmetric(horizontal: 10),
           decoration: BoxDecoration(
             color: Color(0xff141212),
             borderRadius: BorderRadius.circular(12),

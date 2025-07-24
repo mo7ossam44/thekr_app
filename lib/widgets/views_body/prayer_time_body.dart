@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:theker_app/constants.dart';
-import 'package:theker_app/views/not_acceptable_prayer_time_view.dart';
 import 'package:theker_app/views/sonan_view.dart';
 import 'package:theker_app/widgets/month_widget.dart';
 import 'package:theker_app/widgets/prayers_sliver_grid.dart';
@@ -9,6 +8,7 @@ import 'package:theker_app/widgets/prayer_hadith_container.dart';
 import 'package:theker_app/widgets/custom_text_filed_Prayer.dart';
 import 'package:theker_app/widgets/before_prayer_time_container.dart';
 import 'package:theker_app/widgets/custom_container_prayer_time.dart';
+import 'package:theker_app/views/not_acceptable_prayer_time_view.dart';
 
 class PrayerTimeViewBody extends StatelessWidget {
   const PrayerTimeViewBody({super.key});

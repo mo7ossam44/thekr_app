@@ -1,4 +1,5 @@
 import 'dart:ui';
+import 'package:theker_app/models/prayer_time_model.dart';
 import 'package:theker_app/views/quran_view.dart';
 import 'package:theker_app/views/azkary_view.dart';
 import 'package:theker_app/models/category_model.dart';
@@ -11,9 +12,13 @@ const kPrimaryColor = Color(0xff007D45);
 const kPrimaryFont = 'Marhey';
 const kSecondaryFont = 'Tajawal';
 const kAzkarBox = 'Azkar';
+const kAppBarFontSize = 18.0;
 const kHight1 = 20.0;
 const kHight2 = 30.0;
 const kHight3 = 10.0;
+
+const kNotAccept =
+    'روى مسلم عن عُقْبَةَ بْنَ عَامِرٍ الْجُهَنِيَّ يَقُولُ : ثَلاثُ سَاعَاتٍ كَانَ رَسُولُ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ يَنْهَانَا أَنْ نُصَلِّيَ فِيهِنَّ أَوْ أَنْ نَقْبُرَ فِيهِنَّ مَوْتَانَا: حِينَ تَطْلُعُ الشَّمْسُ بَازِغَةً حَتَّى تَرْتَفِعَ، وَحِينَ يَقُومُ قَائِمُ الظَّهِيرَةِ حَتَّى تَمِيلَ الشَّمْسُ، وَحِينَ تَضَيَّفُ الشَّمْسُ لِلْغُرُوبِ حَتَّى تَغْرُبَ .';
 const kSonan1 =
     'عن أم حبيبة -رضي الله عنها- الثابت في صحيح مسلم أن النبي -صلى الله عليه وسلم- قال: ما من عبد مسلم يصلي لله كل يوم اثنتي عشرة ركعة تطوعا غير فريضة، إلا بنى الله له بيتا في الجنة.';
 const kSonan2 =
@@ -1101,44 +1106,43 @@ const List<Map<String, dynamic>> surahsList = [
 List<String> pageImagePath = List.generate(604, (index) => '${index + 1}.png');
 
 final List<SecondCategoryModel> catygories = const [
-    SecondCategoryModel(
-      imagePath: 'assets/images/on_boarding_view_images/qurann.png',
-      title: 'المصحف',
-      subtitle: 'اقرأ القرأن الكريم, نظم وردك اليومي, وحدد مدة ختمتك',
-      textButton: 'استمر',
-    ),
-    SecondCategoryModel(
-      imagePath: 'assets/images/on_boarding_view_images/prayerrrs.png',
-      title: 'مواقيت الصلاة',
-      subtitle: 'تابع مواقيت الصلاة بدقة اينما كنت, مع تنبيهات لكل صلاة',
-      textButton: 'استمر',
-    ),
-    SecondCategoryModel(
-      imagePath: 'assets/images/on_boarding_view_images/azkaree.png',
-      title: 'أذكاري',
-      subtitle:
-          'مجموعة من الاذكار اليوميه, بالاضافه الى مكان للاحتفاظ باذكارك الخاصه',
-      textButton: 'استمر',
-    ),
-    SecondCategoryModel(
-      imagePath: 'assets/images/on_boarding_view_images/qiblaaa.png',
-      title: 'القبلة',
-      subtitle: 'تحديد اتجاه القبله بدقه في اي وقت واي مكان',
-      textButton: 'استمر',
-    ),
-    SecondCategoryModel(
-      imagePath: 'assets/images/on_boarding_view_images/explorrrree.png',
-      title: 'استكشف المزيد',
-      subtitle: 'إستخدم التطبيق واكتشف المزيد من المزايا',
-      textButton: 'إبدأ',
-    ),
-  ];
-
+  SecondCategoryModel(
+    imagePath: 'assets/images/on_boarding_view_images/qurann.png',
+    title: 'المصحف',
+    subtitle: 'اقرأ القرأن الكريم, نظم وردك اليومي, وحدد مدة ختمتك',
+    textButton: 'استمر',
+  ),
+  SecondCategoryModel(
+    imagePath: 'assets/images/on_boarding_view_images/prayerrrs.png',
+    title: 'مواقيت الصلاة',
+    subtitle: 'تابع مواقيت الصلاة بدقة اينما كنت, مع تنبيهات لكل صلاة',
+    textButton: 'استمر',
+  ),
+  SecondCategoryModel(
+    imagePath: 'assets/images/on_boarding_view_images/azkaree.png',
+    title: 'أذكاري',
+    subtitle:
+        'مجموعة من الاذكار اليوميه, بالاضافه الى مكان للاحتفاظ باذكارك الخاصه',
+    textButton: 'استمر',
+  ),
+  SecondCategoryModel(
+    imagePath: 'assets/images/on_boarding_view_images/qiblaaa.png',
+    title: 'القبلة',
+    subtitle: 'تحديد اتجاه القبله بدقه في اي وقت واي مكان',
+    textButton: 'استمر',
+  ),
+  SecondCategoryModel(
+    imagePath: 'assets/images/on_boarding_view_images/explorrrree.png',
+    title: 'استكشف المزيد',
+    subtitle: 'إستخدم التطبيق واكتشف المزيد من المزايا',
+    textButton: 'إبدأ',
+  ),
+];
 
 final List<String> notAcceptList = const [
-    '1 - من طلوع الفجر الصادق حتى تطلع الشمس',
-    '2 - من طلوع الشمس حتى ترتفع قيد رمح.',
-    '3- من بعد صلاة العصر، حتى تميل إلى الغروب.',
-    '4- من حين تميل الشمس للغروب حتى تغرب.',
-    '5- حين يقومُ قائم الظهيرة، وتتوسط الشمس كبد السماء.',
-  ];
+  '1 - من طلوع الفجر الصادق حتى تطلع الشمس',
+  '2 - من طلوع الشمس حتى ترتفع قيد رمح.',
+  '3- من بعد صلاة العصر، حتى تميل إلى الغروب.',
+  '4- من حين تميل الشمس للغروب حتى تغرب.',
+  '5- حين يقومُ قائم الظهيرة، وتتوسط الشمس كبد السماء.',
+];
