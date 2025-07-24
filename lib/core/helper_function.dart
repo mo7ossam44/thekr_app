@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:theker_app/views/home_view.dart';
 import 'package:theker_app/views/quran_view.dart';
-import 'package:theker_app/views/single_zeker_view.dart';
 import 'package:theker_app/views/sonan_view.dart';
-import 'package:theker_app/views/surah_view.dart';
 import 'package:theker_app/views/splash_view.dart';
 import 'package:theker_app/views/prayer_time_view.dart';
 import 'package:theker_app/views/on_boarding_view.dart';
 import 'package:theker_app/views/azkar_count_view.dart';
 import 'package:theker_app/views/morning_azkar_view.dart';
 import 'package:theker_app/views/evening_azkar_view.dart';
+import 'package:theker_app/views/not_acceptable_prayer_time_view.dart';
 
 Route<dynamic> onGenerateRoute(RouteSettings settings) {
   switch (settings.name) {
@@ -31,6 +30,10 @@ Route<dynamic> onGenerateRoute(RouteSettings settings) {
       return MaterialPageRoute(builder: (context) => const SonanView());
     case AzkarCountView.routeName:
       return MaterialPageRoute(builder: (context) => const AzkarCountView());
+    case NotAcceptablePrayerTimeView.routeName:
+      return MaterialPageRoute(
+        builder: (context) => const NotAcceptablePrayerTimeView(),
+      );
     default:
       return MaterialPageRoute(builder: (context) => const Scaffold());
   }
