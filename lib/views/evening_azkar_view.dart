@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:theker_app/constants.dart';
 import 'package:theker_app/widgets/views_body/evening_azkar_view_body.dart';
 
