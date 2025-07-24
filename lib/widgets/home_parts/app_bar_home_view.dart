@@ -14,25 +14,26 @@ class CustomAppBarHomeView extends StatelessWidget {
           children: [
             IconButton(
               onPressed: () {},
-              icon: Icon(Icons.play_arrow_rounded, color: Colors.white),
+              icon: Icon(
+                Icons.play_arrow_rounded,
+                //  color: Colors.white
+                color: kPrimaryColor,
+              ),
             ),
             Text(
               'ذِكر',
               style: TextStyle(
                 fontFamily: kPrimaryFont,
-                fontSize: 25,
+                fontSize: 30,
                 fontWeight: FontWeight.w400,
-                color: Colors.white,
+                // color: Colors.white,
+                color: kPrimaryColor,
               ),
             ),
-            Row(
-              children: [
-                Icon(Icons.settings_outlined, size: 20, color: Colors.white),
-                SizedBox(width: 5),
-                Icon(Icons.search_outlined, size: 20, color: Colors.white),
-                SizedBox(width: 5),
-                Icon(Icons.star_border_sharp, size: 20, color: Colors.white),
-              ],
+            IconButton(
+              onPressed: () {},
+              icon: Icon(Icons.sunny),
+              color: kPrimaryColor,
             ),
           ],
         ),
