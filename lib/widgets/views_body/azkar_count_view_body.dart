@@ -25,6 +25,7 @@ class _AzkarCountViewBodyState extends State<AzkarCountViewBody> {
   @override
   Widget build(BuildContext context) {
     return CustomScrollView(
+      physics: BouncingScrollPhysics(),
       slivers: [
         ConatantHightWidget(height: kHight3),
         AzkarCountSliverGridBuilder(),
