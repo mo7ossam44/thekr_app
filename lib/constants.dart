@@ -1,5 +1,4 @@
 import 'dart:ui';
-import 'package:theker_app/models/prayer_time_model.dart';
 import 'package:theker_app/views/quran_view.dart';
 import 'package:theker_app/views/azkary_view.dart';
 import 'package:theker_app/models/category_model.dart';
