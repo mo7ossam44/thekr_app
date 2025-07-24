@@ -11,7 +11,16 @@ class SurahCardWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => Navigator.of(context).pushNamed(SurahView.routeName),
+      onTap: () => Navigator.of(context).push(
+        MaterialPageRoute(
+          builder: (context) {
+            return SurahView(
+              startPage: surahModel.startPage,
+              surahName: surahModel.arabic,
+            );
+          },
+        ),
+      ),
       child: Container(
         decoration: BoxDecoration(
           color: Color(0xff141212),

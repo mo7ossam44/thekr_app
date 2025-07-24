@@ -12,14 +12,14 @@ class SurahSliverGridBuilder extends StatelessWidget {
     return SliverPadding(
       padding: EdgeInsetsGeometry.symmetric(horizontal: 20),
       sliver: SliverGrid(
-        delegate: SliverChildBuilderDelegate((context, index) {
-          return SurahCardWidget(surahModel: surah[index]);
-        }, childCount: surah.length),
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
           mainAxisSpacing: 40,
           crossAxisSpacing: 40,
         ),
+        delegate: SliverChildBuilderDelegate((context, index) {
+          return SurahCardWidget(surahModel: surah[index]);
+        }, childCount: surah.length),
       ),
     );
   }
