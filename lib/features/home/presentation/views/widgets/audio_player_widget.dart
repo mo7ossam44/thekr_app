@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:theker_app/constants.dart';
 
 class AudioPlayerWodget extends StatefulWidget {
-  AudioPlayerWodget({super.key});
+  const AudioPlayerWodget({super.key});
 
   @override
   State<AudioPlayerWodget> createState() => _AudioPlayerWodgetState();

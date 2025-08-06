@@ -6,7 +6,7 @@ import 'package:theker_app/core/sliver_hight_widget.dart';
 import 'package:theker_app/features/home/presentation/views/widgets/sliver_grid_builder.dart';
 import 'package:theker_app/features/home/presentation/views/widgets/tab_bar_widget.dart';
 import 'package:theker_app/features/home/presentation/views/widgets/custom_container.dart';
-import 'package:theker_app/features/home/presentation/views/widgets/doaa_widget-home_view.dart';
+import 'package:theker_app/features/home/presentation/views/widgets/doaa_widget_home_view.dart';
 
 class HomeViewBody extends StatefulWidget {
   const HomeViewBody({super.key});

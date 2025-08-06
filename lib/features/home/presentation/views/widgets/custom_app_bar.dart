@@ -9,13 +9,13 @@ class CustomAppBarWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SliverToBoxAdapter(
-      child: Row(   
+      child: Row(
         children: [
           IconButton(
             onPressed: () {},
             icon: Icon(Icons.arrow_back_ios_new_outlined),
             iconSize: 20,
-            color: Colors.white.withOpacity(0.8),
+            color: Colors.grey.shade400,
           ),
           Text(
             text,

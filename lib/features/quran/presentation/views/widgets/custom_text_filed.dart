@@ -35,7 +35,7 @@ class CustomTextFiledAppBar extends StatelessWidget {
               Icon(
                 Icons.search,
                 color: Theme.of(context).brightness == Brightness.dark
-                    ? Colors.white.withOpacity(0.4)
+                    ? Colors.grey.shade400
                     : kPrimaryColor,
               ),
               SizedBox(width: 10),
@@ -43,7 +43,7 @@ class CustomTextFiledAppBar extends StatelessWidget {
                 'ابحث عن سوره',
                 style: TextStyle(
                   color: Theme.of(context).brightness == Brightness.dark
-                      ? Colors.white.withOpacity(0.4)
+                      ? Colors.grey.shade400
                       : kPrimaryColor,
                   fontFamily: kSecondaryFont,
                 ),

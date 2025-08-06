@@ -10,7 +10,7 @@ import 'package:theker_app/core/sliver_hight_widget.dart';
 import 'package:theker_app/features/prayers/presentation/views/widgets/prayers_loaded_widget.dart';
 import 'package:theker_app/features/prayers/presentation/views/widgets/prayers_loading_widget.dart';
 import 'package:theker_app/features/prayers/presentation/views/widgets/prayer_hadith_container.dart';
-import 'package:theker_app/features/prayers/presentation/views/widgets/custom_text_filed_Prayer.dart';
+import 'package:theker_app/features/prayers/presentation/views/widgets/custom_text_filed_prayer.dart';
 import 'package:theker_app/features/prayers/presentation/views/widgets/custom_container_prayer_time.dart';
 import 'package:theker_app/features/prayers/presentation/views/not_acceptable_prayer_time_view.dart';
 import 'package:theker_app/features/prayers/presentation/manger/get_prayers_time_cubit/get_prayers_cubit.dart';

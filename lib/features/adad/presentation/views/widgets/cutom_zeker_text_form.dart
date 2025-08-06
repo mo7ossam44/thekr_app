@@ -33,7 +33,7 @@ class CustomZekerTextFormFiled extends StatelessWidget {
       },
       onSaved: onSaved,
       cursorHeight: 15,
-      cursorColor: Colors.white.withOpacity(0.4),
+      cursorColor: Colors.grey.shade400,
       textDirection: TextDirection.rtl,
       decoration: InputDecoration(
         filled: true,

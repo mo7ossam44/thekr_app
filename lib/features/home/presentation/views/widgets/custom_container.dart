@@ -20,7 +20,7 @@ class CustomContainer extends StatelessWidget {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(12),
               gradient: LinearGradient(
-                colors: [Color(0xFFFFFF), kPrimaryColor],
+                colors: [Color(0x00FFFFFF), kPrimaryColor],
                 begin: Alignment.centerLeft,
                 end: Alignment.centerRight,
               ),
