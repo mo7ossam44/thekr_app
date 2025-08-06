@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:theker_app/constants.dart';
 import 'package:theker_app/cubits/zeker_cubit/zeker_cubit.dart';
-import 'package:theker_app/widgets/sliver_hight_widget.dart';
+import 'package:theker_app/core/sliver_hight_widget.dart';
 import 'package:theker_app/features/adad/presentation/views/widgets/bottom_sheet_container.dart';
-import 'package:theker_app/widgets/custom_container_prayer_time.dart';
+import 'package:theker_app/features/prayers/presentation/views/widgets/custom_container_prayer_time.dart';
 import 'package:theker_app/features/adad/presentation/views/widgets/azkar_count_sliver_grid.dart';
 
 class AzkarCountViewBody extends StatefulWidget {

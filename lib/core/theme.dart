@@ -1,5 +1,6 @@
 // theme.dart
 import 'package:flutter/material.dart';
+import 'package:theker_app/constants.dart';
 
 final ThemeData lightTheme = ThemeData(
   brightness: Brightness.light,
@@ -7,8 +8,8 @@ final ThemeData lightTheme = ThemeData(
   scaffoldBackgroundColor: Colors.white,
   appBarTheme: const AppBarTheme(
     backgroundColor: Colors.green,
-    iconTheme: IconThemeData(color: Colors.white),
-    titleTextStyle: TextStyle(color: Colors.white, fontSize: 20),
+    iconTheme: IconThemeData(color: Colors.black),
+    titleTextStyle: TextStyle(color: Colors.black, fontSize: kAppBarFontSize),
   ),
   textTheme: const TextTheme(
     bodyLarge: TextStyle(color: Colors.black),
@@ -24,7 +25,7 @@ final ThemeData darkTheme = ThemeData(
   appBarTheme: const AppBarTheme(
     backgroundColor: Color(0xff1C1A1A),
     iconTheme: IconThemeData(color: Colors.white),
-    titleTextStyle: TextStyle(color: Colors.white, fontSize: 20),
+    titleTextStyle: TextStyle(color: Colors.white, fontSize: kAppBarFontSize),
   ),
   textTheme: const TextTheme(
     bodyLarge: TextStyle(color: Colors.white),

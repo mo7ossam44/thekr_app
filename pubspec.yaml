@@ -44,6 +44,12 @@ dependencies:
   floating_snackbar: ^1.0.5
   skeletonizer: ^2.1.0+1
   auto_animated: ^3.2.0
+  flutter_qiblah: ^3.1.0+1
+  permission_handler: ^12.0.1
+  geolocator: ^13.0.4
+  geocoding: ^4.0.0
+  sliver_app_bar_builder: ^1.1.0
+  audioplayers: ^6.5.0
 
 dev_dependencies:
   flutter_test:
@@ -74,7 +80,9 @@ flutter:
     - assets/images/categories_images/
     - assets/quran_assets/114_surah_data.json
     - assets/quran_assets/quran_images/
-
+    - assets/quran_assets/azkar.json
+    - assets/images/categories_images/sliverImage.jpg
+    - assets/voices/voice1.wav
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
 

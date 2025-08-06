@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:theker_app/constants.dart';
-import 'package:theker_app/models/zeker_model.dart';
+import 'package:theker_app/features/adad/presentation/views_model/zeker_model.dart';
 import 'package:theker_app/cubits/zeker_cubit/zeker_cubit.dart';
 import 'package:theker_app/cubits/zeker_cubit/zeker_states.dart';
 import 'package:theker_app/features/adad/presentation/views/widgets/custom_zeker_container.dart';

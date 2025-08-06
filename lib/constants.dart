@@ -1,21 +1,39 @@
 import 'dart:ui';
-import 'package:theker_app/views/quran_view.dart';
-import 'package:theker_app/views/azkary_view.dart';
-import 'package:theker_app/models/category_model.dart';
-import 'package:theker_app/views/prayer_time_view.dart';
-import 'package:theker_app/views/evening_azkar_view.dart';
-import 'package:theker_app/views/morning_azkar_view.dart';
-import 'package:theker_app/models/second_category_model.dart';
+import 'package:theker_app/features/home/presentation/views_model/category_model.dart';
+import 'package:theker_app/features/azkar/presentation/views/sleep_azkar_view.dart';
+import 'package:theker_app/features/adad/presentation/views/azkar_count_view.dart';
+import 'package:theker_app/features/azkar/presentation/views/evening_azkar_view.dart';
+import 'package:theker_app/features/azkar/presentation/views/wake_up_azkar_view.dart';
+import 'package:theker_app/features/azkar/presentation/views/morning_azkar_view.dart';
+import 'package:theker_app/features/azkar/presentation/views/general_azkar_view.dart';
+import 'package:theker_app/features/azkar/presentation/views/haj_omra_azkar_view.dart';
+import 'package:theker_app/features/onboarding/views_model/second_category_model.dart';
+import 'package:theker_app/features/azkar/presentation/views/prayer_later_azkar_view.dart';
 
 const kPrimaryColor = Color(0xff007D45);
+const kSecondaryColor = Color(0xFFEEEEEE);
 const kPrimaryFont = 'Marhey';
 const kSecondaryFont = 'Tajawal';
 const kAzkarBox = 'Azkar';
-const kAppBarFontSize = 18.0;
+const kAppBarFontSize = 25.0;
 const kHight1 = 20.0;
 const kHight2 = 30.0;
 const kHight3 = 10.0;
-
+const kSjudTelawa = 'سجد وجهي للذي خلقه وشق سمعه وبصره بحوله وقوته';
+const kIbrahimiaSalat = '''
+اللهم صل على محمد وعلى آل محمد، كما صليت على إبراهيم، وعلى آل إبراهيم، إنك حميد مجيد، اللهم بارك على محمد وعلى آل محمد، كما باركت على إبراهيم وعلى آل إبراهيم، إنك حميد مجيد''';
+const kFeterHadith =
+    'لا يجوز تأخير زكاة الفطر فعنِ ابنِ عبَّاسٍ قالَ فرضَ رسولُ \n اللَّهِ صلَّى اللَّهُ عليْهِ وسلَّمَ زَكاةَ الفطرِ \n طُهرةً للصَّائمِ منَ اللَّغوِ والرَّفثِ وطعمةً للمساكينِ من \nأدَّاها قبلَ الصَّلاةِ فَهيَ زَكاةٌ مقبولةٌ  \n ومن أدَّاها بعدَ الصَّلاةِ فَهيَ صدقةٌ منَ الصَّدقاتِ';
+const kFeterHadith2 =
+    '''عَن ابْنِ عُمَرَ رضي الله عنهما قَالَ: "فَرَضَ رَسُولُ اللَّهِ ﷺ زَكَاةَ الْفِطْرِ مِنْ رَمَضَانَ صَاعًا مِنْ تَمْرٍ، أَوْ صَاعًا مِنْ شَعِيرٍ عَلَى الْعَبْدِ وَالْحُرِّ، وَالذَّكَرِ وَالْأُنْثَى، وَالصَّغِيرِ وَالْكَبِيرِ مِنَ الْمُسْلِمِينَ". رَوَاهُ الْجَمَاعَةُ.
+وَلِأَحْمَدَ وَالْبُخَارِيِّ وَأَبِي دَاوُد: وَكَانَ ابْنُ عُمَرَ يُعْطِي التَّمْرَ إلَّا عَامًا وَاحِدًا أَعْوَزَ التَّمْرُ فَأَعْطَى الشَّعِيرَ.
+وَلِلْبُخَارِيِّ: وَكَانُوا يُعْطُونَ قَبْلَ الْفِطْرِ بِيَوْمٍ أَوْ يَوْمَيْنِ.
+ وَعَنْ أَبِي سَعِيدٍ قَالَ: "كُنَّا نُخْرِجُ زَكَاةَ الْفِطْرِ صَاعًا مِنْ طَعَامٍ، أَوْ صَاعًا مِنْ شَعِيرٍ، أَوْ صَاعًا مِنْ تَمْرٍ، أَوْ صَاعًا مِنْ أَقِطٍ، أَوْ صَاعًا مِنْ زَبِيبٍ". أَخْرَجَاهُ.
+وَفِي رِوَايَةٍ: "كُنَّا نُخْرِجُ زَكَاةَ الْفِطْرِ إذْ كَانَ فِينَا رَسُولُ اللَّهِ ﷺ صَاعًا مِنْ طَعَامٍ، أَوْ صَاعًا مِنْ تَمْرٍ، أَوْ صَاعًا مِنْ شَعِيرٍ، أَوْ صَاعًا مِنْ زَبِيبٍ، أَوْ صَاعًا مِنْ أَقِطٍ، فَلَمْ نَزَلْ كَذَلِكَ حَتَّى قَدِمَ عَلَيْنَا مُعَاوِيَةُ الْمَدِينَةَ، فَقَالَ: إنِّي لَأَرَى مُدَّيْنِ مِنْ سَمْرَاءِ الشَّام يَعْدِلُ صَاعًا مِنْ تَمْرٍ، فَأَخَذَ النَّاسُ بِذَلِكَ". قَالَ أَبُو سَعِيدٍ: "فَلَا أَزَالُ أُخْرِجُهُ كَمَا كُنْتُ أُخْرِجُهُ". رَوَاهُ الْجَمَاعَةُ، لَكِنَّ الْبُخَارِيَّ لَمْ يَذْكُرْ فِيهِ: قَالَ أَبُو سَعِيدٍ: فَلَا أَزَالُ ... إلَخْ. وَابْنُ مَاجَهْ لَمْ يَذْكُرْ لَفْظَة "أَوْ" في شيءٍ مِنْهُ.
+وَلِلنَّسَائِيِّ عَنْ أَبِي سَعِيدٍ قَالَ: "فَرَضَ رَسُولُ اللَّهِ ﷺ صَدَقَةَ الْفِطْرِ صَاعًا مِنْ طَعَامٍ، أَوْ صَاعًا مِنْ شَعِيرٍ، أَوْ صَاعًا مِنْ تَمْرٍ، أَوْ صَاعًا مِنْ أَقِطٍ"، وَهُوَ حُجَّةٌ فِي أَنَّ الْأَقِطَ أَصْلٌ.''';
+const kZakatShart = 'من شروط الزكاة ان يبلغ المال النصاب وان يمر عليه حول كامل';
+const kZakatHadith =
+    'عن أبي امامة الباهلي -رضي الله عنه- قال: (سمعتَ رسولَ اللهِ -صلَّى اللهُ عليهِ وسلَّمَ- يخطُبُ في حَجَّةِ الوداعِ فقالَ: اتَّقوا اللهَ ربَّكم، وصلُّوا خمسَكم، وصوموا شَهرَكم، وأدُّوا زَكاةَ أموالِكم، وأطيعوا ذا أمرِكم تدخلوا جنَّةَ ربِّكُم).';
 const kNotAccept =
     'روى مسلم عن عُقْبَةَ بْنَ عَامِرٍ الْجُهَنِيَّ يَقُولُ : ثَلاثُ سَاعَاتٍ كَانَ رَسُولُ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ يَنْهَانَا أَنْ نُصَلِّيَ فِيهِنَّ أَوْ أَنْ نَقْبُرَ فِيهِنَّ مَوْتَانَا: حِينَ تَطْلُعُ الشَّمْسُ بَازِغَةً حَتَّى تَرْتَفِعَ، وَحِينَ يَقُومُ قَائِمُ الظَّهِيرَةِ حَتَّى تَمِيلَ الشَّمْسُ، وَحِينَ تَضَيَّفُ الشَّمْسُ لِلْغُرُوبِ حَتَّى تَغْرُبَ .';
 const kSonan1 =
@@ -32,19 +50,14 @@ const kFajrHadth =
     'قال رسول الله صلى الله عليه وسلم: (مَن صَلَّى الصُّبْحَ فَهو في ذِمَّةِ اللهِ، فلا يَطْلُبَنَّكُمُ اللَّهُ مِن ذِمَّتِهِ بشيءٍ فيُدْرِكَهُ فَيَكُبَّهُ في نَارِ جَهَنَّمَ).';
 const List<CategoryModel> categoryModel = [
   CategoryModel(
-    targetPage: PrayerTimeView(),
-    image: 'assets/images/categories_images/Vector.png',
-    name: 'أذكار بعد الصلاة',
-  ),
-  CategoryModel(
-    targetPage: AzkarView(),
+    targetPage: AzkarCountView(),
     image: 'assets/images/categories_images/Vector.png',
     name: 'أذكاري',
   ),
   CategoryModel(
-    targetPage: QuranView(),
+    targetPage: PrayerLaterAzkarView(),
     image: 'assets/images/categories_images/Vector.png',
-    name: 'أذكار النوم',
+    name: 'أذكار بعد الصلاة',
   ),
   CategoryModel(
     targetPage: MorningAzkarView(),
@@ -52,9 +65,9 @@ const List<CategoryModel> categoryModel = [
     name: 'أذكار الصباح',
   ),
   CategoryModel(
-    targetPage: AzkarView(),
+    targetPage: SleepAzkarView(),
     image: 'assets/images/categories_images/Vector.png',
-    name: 'أذكار الإستيقاظ',
+    name: 'أذكار النوم',
   ),
   CategoryModel(
     targetPage: EveningAzkarView(),
@@ -62,14 +75,19 @@ const List<CategoryModel> categoryModel = [
     name: 'أذكار المساء',
   ),
   CategoryModel(
-    targetPage: AzkarView(),
+    targetPage: WakeUpAzkarView(),
     image: 'assets/images/categories_images/Vector.png',
-    name: 'أدعية شاملة',
+    name: 'أذكار الإستيقاظ',
   ),
   CategoryModel(
-    targetPage: AzkarView(),
+    targetPage: HajOmraAzkarView(),
     image: 'assets/images/categories_images/Vector.png',
-    name: 'الرقية الشرعية',
+    name: 'أدعية الحج والعمره',
+  ),
+  CategoryModel(
+    targetPage: GeneralAzkarView(),
+    image: 'assets/images/categories_images/Vector.png',
+    name: 'أدعية شاملة',
   ),
 ];
 
@@ -1145,3 +1163,20 @@ final List<String> notAcceptList = const [
   '4- من حين تميل الشمس للغروب حتى تغرب.',
   '5- حين يقومُ قائم الظهيرة، وتتوسط الشمس كبد السماء.',
 ];
+
+final List<String> zakatCategoris = const [
+  'زكاة المال',
+  'زكاة الذهب والفضه',
+  'زكاة التجارة',
+  'زكاة الأنعام',
+  'زكاة الزروع والثمار',
+  'زكاة الفطر',
+];
+
+
+  final List<String> images = const [
+    'assets/images/categories_images/text.jpg',
+    'assets/images/categories_images/text2.jpg',
+    'assets/images/categories_images/text3.jpg',
+    'assets/images/categories_images/text4.jpg',
+  ];

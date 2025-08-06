@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:theker_app/constants.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:theker_app/models/zeker_model.dart';
+import 'package:theker_app/features/adad/presentation/views_model/zeker_model.dart';
 import 'package:theker_app/cubits/zeker_cubit/zeker_cubit.dart';
-import 'package:theker_app/cubits/add_zeker_cubit/add_zeker_cubit.dart';
+import 'package:theker_app/features/adad/presentation/manger/add_zeker_cubit/add_zeker_cubit.dart';
 import 'package:theker_app/features/adad/presentation/views/widgets/cutom_zeker_text_form.dart';
 
 class AddZekerForm extends StatefulWidget {

@@ -1,5 +1,5 @@
 
-import 'package:theker_app/models/zeker_model.dart';
+import 'package:theker_app/features/adad/presentation/views_model/zeker_model.dart';
 
 abstract class ZekerStates {}
 

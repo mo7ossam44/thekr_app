@@ -1,6 +1,7 @@
- [{
+
+  [{
          "id": 1,
-         
+        "juzz" : 1,
          "name": "Al Fatiha",
          "aya": 7,
          "english": "The Opening",
@@ -11,7 +12,7 @@
      },
      {
          "id": 2,
-         
+    "juzz" : 1,
          "name": "Al Baqarah",
          "aya": 286,
          "english": "The Cow",
@@ -22,7 +23,7 @@
      },
      {
          "id": 3,
-         
+ "juzz" : 3,
          "name": "Al Imran",
          "aya": 200,
          "english": "The Family of Imran",
@@ -33,7 +34,7 @@
      },
      {
          "id": 4,
-         
+           "juzz" : 4,
          "name": "An Nisa",
          "aya": 176,
          "english": "The Women",
@@ -44,20 +45,18 @@
      },
      {
          "id": 5,
-         
+           "juzz" : 6,
          "name": "Al Ma'idah",
-
          "aya": 120,
          "english": "The Table",
          "turkish": "Mâide",
-
          "place": "Madinah",
          "startPage": 106,
          "arabic": "المائدة"
      },
      {
          "id": 6,
-         
+           "juzz" : 7,
          "name": "Al An'am",
          "aya": 165,
          "english": "The Cattle",
@@ -68,7 +67,7 @@
      },
      {
          "id": 7,
-         
+           "juzz" : 8,
          "name": "Al A'raf",
          "aya": 206,
          "english": "The Heights",
@@ -79,7 +78,7 @@
      },
      {
          "id": 8,
-         
+           "juzz" : 9,
          "name": "Al Anfal",
          "aya": 75,
          "english": "The Spoils of War",
@@ -90,7 +89,7 @@
      },
      {
          "id": 9,
-         
+           "juzz" : 10,
          "name": "At Tawbah",
          "aya": 129,
          "english": "The Repentance",
@@ -101,7 +100,7 @@
      },
      {
          "id": 10,
-         
+           "juzz" : 11,
          "name": "Al Yunus",
          "aya": 109,
          "english": "Jonah",
@@ -112,7 +111,7 @@
      },
      {
          "id": 11,
-         
+           "juzz" : 11,
          "name": "Hud",
          "aya": 123,
          "english": "Hud",
@@ -123,7 +122,7 @@
      },
      {
          "id": 12,
-         
+           "juzz" : 12,
          "name": "Yusuf",
          "aya": 111,
          "english": "Joseph",
@@ -134,7 +133,7 @@
      },
      {
          "id": 13,
-         
+           "juzz" : 13,
          "name": "Ar Ra'd",
          "aya": 43,
          "english": "The Thunder",
@@ -145,7 +144,7 @@
      },
      {
          "id": 14,
-         
+           "juzz" : 13,
          "name": "Ibrahim",
          "aya": 52,
          "english": "Abraham",
@@ -156,7 +155,7 @@
      },
      {
          "id": 15,
-         
+           "juzz" : 14,
          "name": "Al Hijr",
          "aya": 99,
          "english": "The Stoneland",
@@ -167,7 +166,7 @@
      },
      {
          "id": 16,
-         
+           "juzz" : 14,
          "name": "An Nahl",
          "aya": 128,
          "english": "The Honey Bee",
@@ -178,7 +177,7 @@
      },
      {
          "id": 17,
-         
+           "juzz" : 15,
          "name": "Al Isra'",
          "aya": 111,
          "english": "The Night Journey",
@@ -189,7 +188,7 @@
      },
      {
          "id": 18,
-         
+           "juzz" : 15,
          "name": "Al Kahf",
          "aya": 110,
          "english": "The Cave",
@@ -200,7 +199,7 @@
      },
      {
          "id": 19,
-         
+           "juzz" : 16,
          "name": "Maryam",
          "aya": 98,
          "english": "Mary",
@@ -211,7 +210,7 @@
      },
      {
          "id": 20,
-         
+           "juzz" : 16,
          "name": "Ta Ha",
          "aya": 135,
          "english": "Ta Ha",
@@ -222,7 +221,7 @@
      },
      {
          "id": 21,
-         
+           "juzz" : 17,
          "name": "Al Anbiya",
          "aya": 112,
          "english": "The Prophets",
@@ -233,7 +232,7 @@
      },
      {
          "id": 22,
-         
+           "juzz" : 17,
          "name": "Al Hajj",
          "aya": 78,
          "english": "The Pilgrimage",
@@ -244,7 +243,7 @@
      },
      {
          "id": 23,
-         
+           "juzz" : 18,
          "name": "Al Mu minun",
          "aya": 118,
          "english": "The Believers",
@@ -255,7 +254,7 @@
      },
      {
          "id": 24,
-         
+           "juzz" : 18,
          "name": "An Nur",
          "aya": 64,
          "english": "The Light",
@@ -266,7 +265,7 @@
      },
      {
          "id": 25,
-         
+           "juzz" : 19,
          "name": "Al Furqan",
          "aya": 77,
          "english": "The Criterion",
@@ -277,7 +276,7 @@
      },
      {
          "id": 26,
-         
+           "juzz" : 19,
          "name": "As Su'ara",
          "aya": 227,
          "english": "The Poets",
@@ -288,7 +287,7 @@
      },
      {
          "id": 27,
-         
+           "juzz" : 19,
          "name": "An Naml",
          "aya": 93,
          "english": "The Ant",
@@ -299,7 +298,7 @@
      },
      {
          "id": 28,
-         
+           "juzz" : 20,
          "name": "Al Qasas",
          "aya": 88,
          "english": "The Narrations",
@@ -310,7 +309,7 @@
      },
      {
          "id": 29,
-         
+           "juzz" : 20,
          "name": "Al Ankabut",
          "aya": 69,
          "english": "The Spider",
@@ -322,7 +321,7 @@
      },
      {
          "id": 30,
-         
+           "juzz" : 21,
          "name": "Ar Rum",
          "aya": 60,
          "english": "Rome",
@@ -333,7 +332,7 @@
      },
      {
          "id": 31,
-         
+           "juzz" : 21,
          "name": "Luqman",
          "aya": 34,
          "english": "Luqman",
@@ -344,7 +343,7 @@
      },
      {
          "id": 32,
-         
+           "juzz" : 21,
          "name": "As Sajdah",
          "aya": 30,
          "english": "The Prostration",
@@ -355,7 +354,7 @@
      },
      {
          "id": 33,
-         
+           "juzz" : 21,
          "name": "Al Ahzab",
          "aya": 73,
          "english": "The Clans",
@@ -366,7 +365,7 @@
      },
      {
          "id": 34,
-         
+           "juzz" : 22,
          "name": "Saba'",
          "aya": 54,
          "english": "Sheba",
@@ -377,7 +376,7 @@
      },
      {
          "id": 35,
-         
+           "juzz" : 22,
          "name": "Fatir",
          "aya": 45,
          "english": "The Originator",
@@ -388,7 +387,7 @@
      },
      {
          "id": 36,
-         
+           "juzz" : 22,
          "name": "Ya'sin",
          "aya": 83,
          "english": "Ya Sin",
@@ -399,7 +398,7 @@
      },
      {
          "id": 37,
-         
+           "juzz" : 23,
          "name": "As Saffat",
          "aya": 182,
          "english": "Those Who Set The Ranks",
@@ -410,7 +409,7 @@
      },
      {
          "id": 38,
-         
+           "juzz" : 23,
          "name": "Saad",
          "aya": 88,
          "english": "Ṣād",
@@ -421,7 +420,7 @@
      },
      {
          "id": 39,
-         
+           "juzz" : 23,
          "name": "Az Zumar",
          "aya": 75,
          "english": "The Crowds",
@@ -432,7 +431,7 @@
      },
      {
          "id": 40,
-         
+           "juzz" : 24,
          "name": "Ghafir",
          "aya": 85,
          "english": "The Forgiver",
@@ -443,7 +442,7 @@
      },
      {
          "id": 41,
-         
+           "juzz" : 24,
          "name": "Fussilat",
          "aya": 54,
          "english": "Expounded",
@@ -454,7 +453,7 @@
      },
      {
          "id": 42,
-         
+           "juzz" : 25,
          "name": "As Sura",
          "aya": 53,
          "english": "The Consultation",
@@ -465,7 +464,7 @@
      },
      {
          "id": 43,
-         
+           "juzz" : 25,
          "name": "Az Zukhruf",
          "aya": 89,
          "english": "The Gold Adornments",
@@ -476,7 +475,7 @@
      },
      {
          "id": 44,
-         
+           "juzz" : 25,
          "name": "Ad Dukhan",
          "aya": 59,
          "english": "The Smoke",
@@ -487,7 +486,7 @@
      },
      {
          "id": 45,
-         
+           "juzz" : 25,
          "name": "Al Jaathiyah",
          "aya": 37,
          "english": "The Kneeling Down",
@@ -498,7 +497,7 @@
      },
      {
          "id": 46,
-         
+           "juzz" : 26,
          "name": "Al Ahqaf",
          "aya": 35,
          "english": "Winding Sand tracts",
@@ -509,7 +508,7 @@
      },
      {
          "id": 47,
-         
+           "juzz" : 26,
          "name": "Muhammad",
          "aya": 38,
          "english": "Muhammad",
@@ -520,7 +519,7 @@
      },
      {
          "id": 48,
-         
+           "juzz" : 26,
          "name": "Al Fath",
          "aya": 29,
          "english": "The Victory",
@@ -531,7 +530,7 @@
      },
      {
          "id": 49,
-         
+           "juzz" : 26,
          "name": "Al Hujurut",
          "aya": 18,
          "english": "The Private Apartments",
@@ -542,7 +541,7 @@
      },
      {
          "id": 50,
-         
+           "juzz" : 26,
          "name": "Qaaf",
          "aya": 45,
          "english": "Q̈āf",
@@ -553,7 +552,7 @@
      },
      {
          "id": 51,
-         
+           "juzz" : 27,
          "name": "Ad Dariyat",
          "aya": 60,
          "english": "The Wind That Scatter",
@@ -564,7 +563,7 @@
      },
      {
          "id": 52,
-         
+           "juzz" : 27,
          "name": "At Toor",
          "aya": 49,
          "english": "The Mount",
@@ -575,7 +574,7 @@
      },
      {
          "id": 53,
-         
+           "juzz" : 27,
          "name": "An Najm",
          "aya": 62,
          "english": "The Star",
@@ -586,7 +585,7 @@
      },
      {
          "id": 54,
-         
+           "juzz" : 27,
          "name": "Al Qamar",
          "aya": 55,
          "english": "The Moon",
@@ -597,7 +596,7 @@
      },
      {
          "id": 55,
-         
+           "juzz" : 27,
          "name": "Ar Rahman",
          "aya": 78,
          "english": "The Most Merciful",
@@ -608,7 +607,7 @@
      },
      {
          "id": 56,
-         
+           "juzz" : 27,
          "name": "Al Waqiah",
          "aya": 96,
          "english": "The Inevitable",
@@ -619,7 +618,7 @@
      },
      {
          "id": 57,
-         
+           "juzz" : 27,
          "name": "Al Hadeed",
          "aya": 29,
          "english": "The Iron",
@@ -630,7 +629,7 @@
      },
      {
          "id": 58,
-         
+           "juzz" : 28,
          "name": "Al Mujadila",
          "aya": 22,
          "english": "The Pleading",
@@ -641,7 +640,7 @@
      },
      {
          "id": 59,
-         
+           "juzz" : 28,
          "name": "Al Hashr",
          "aya": 24,
          "english": "The Mustering",
@@ -653,7 +652,7 @@
      },
      {
          "id": 60,
-         
+           "juzz" : 28,
          "name": "Al Mumtahanah",
          "aya": 13,
          "english": "The Examined One",
@@ -664,7 +663,7 @@
      },
      {
          "id": 61,
-         
+           "juzz" : 28,
          "name": "As Saff",
          "aya": 14,
          "english": "The Ranks",
@@ -675,7 +674,7 @@
      },
      {
          "id": 62,
-         
+           "juzz" : 28,
          "name": "Al Jumu'ah",
          "aya": 11,
          "english": "Congregation (Friday)",
@@ -687,7 +686,7 @@
      },
      {
          "id": 63,
-         
+           "juzz" : 28,
          "name": "Al Munafiqoon",
          "aya": 11,
          "english": "The Hypocrites",
@@ -698,7 +697,7 @@
      },
      {
          "id": 64,
-         
+           "juzz" : 28,
          "name": "At Taghabun",
          "aya": 18,
          "english": "The Cheating",
@@ -709,7 +708,7 @@
      },
      {
          "id": 65,
-         
+           "juzz" : 28,
          "name": "At Talaq",
          "aya": 12,
          "english": "Divorce",
@@ -720,7 +719,7 @@
      },
      {
          "id": 66,
-         
+           "juzz" : 28,
          "name": "At Tahreem",
          "aya": 12,
          "english": "The Prohibition",
@@ -731,7 +730,7 @@
      },
      {
          "id": 67,
-         
+         "juzz" : 29,
          "name": "Al Mulk",
          "aya": 30,
          "english": "The Dominion",
@@ -742,7 +741,7 @@
      },
      {
          "id": 68,
-         
+         "juzz" : 29,
          "name": "Al Qalam",
          "aya": 52,
          "english": "The Pen",
@@ -753,7 +752,7 @@
      },
      {
          "id": 69,
-         
+         "juzz" : 29,
          "name": "Al Haaqqah",
          "aya": 52,
          "english": "The Sure Reality",
@@ -764,7 +763,7 @@
      },
      {
          "id": 70,
-         
+         "juzz" : 29,
          "name": "Al Ma'arij",
          "aya": 44,
          "english": "The Ways of Ascent",
@@ -775,7 +774,7 @@
      },
      {
          "id": 71,
-         
+         "juzz" : 29,
          "name": "Nooh",
          "aya": 28,
          "english": "Noah",
@@ -786,7 +785,7 @@
      },
      {
          "id": 72,
-         
+         "juzz" : 29,
          "name": "Al Jinn",
          "aya": 28,
          "english": "The Jinn",
@@ -797,7 +796,7 @@
      },
      {
          "id": 73,
-         
+         "juzz" : 29,
          "name": "Al Muzammil",
          "aya": 20,
          "english": "The Enfolded One",
@@ -808,7 +807,7 @@
      },
      {
          "id": 74,
-         
+         "juzz" : 29,
          "name": "Al Muddathir",
          "aya": 56,
          "english": "The One Wrapped Up",
@@ -819,7 +818,7 @@
      },
      {
          "id": 75,
-         
+         "juzz" : 29,
          "name": "Al Qiyamah",
          "aya": 40,
          "english": "Resurrection",
@@ -830,7 +829,7 @@
      },
      {
          "id": 76,
-         
+         "juzz" : 29,
          "name": "Al Insaan",
          "aya": 31,
          "english": "The Human",
@@ -841,7 +840,7 @@
      },
      {
          "id": 77,
-         
+         "juzz" : 29,
          "name": "Al Mursalat",
          "aya": 50,
          "english": "Those Sent Forth",
@@ -852,7 +851,7 @@
      },
      {
          "id": 78,
-         
+         "juzz" : 30,
          "name": "An Naba",
          "aya": 40,
          "english": "The Great News",
@@ -863,7 +862,7 @@
      },
      {
          "id": 79,
-         
+         "juzz" : 30,
          "name": "An Naaziat",
          "aya": 46,
          "english": "Those Who Tear Out",
@@ -874,7 +873,7 @@
      },
      {
          "id": 80,
-         
+         "juzz" : 30,
          "name": "Abasa",
          "aya": 42,
          "english": "He Frowned",
@@ -885,7 +884,7 @@
      },
      {
          "id": 81,
-         
+         "juzz" : 30,
          "name": "At Takweer",
          "aya": 29,
          "english": "The Folding Up",
@@ -896,7 +895,7 @@
      },
      {
          "id": 82,
-         
+         "juzz" : 30,
          "name": "Al Infitar",
          "aya": 19,
          "english": "The Overthrowing",
@@ -907,7 +906,7 @@
      },
      {
          "id": 83,
-         
+         "juzz" : 30,
          "name": "Al Mutaffifin",
          "aya": 36,
          "english": "The Cleaving Asunder",
@@ -918,7 +917,7 @@
      },
      {
          "id": 84,
-         
+         "juzz" : 30,
          "name": "Al Inshiqaaq",
          "aya": 25,
          "english": "The Dealers in Fraud",
@@ -929,7 +928,7 @@
      },
      {
          "id": 85,
-         
+         "juzz" : 30,
          "name": "Al Burooj",
          "aya": 22,
          "english": "The Constellations",
@@ -940,7 +939,7 @@
      },
      {
          "id": 86,
-         
+         "juzz" : 30,
          "name": "At Taariq",
          "aya": 17,
          "english": "The Morning Star",
@@ -951,7 +950,7 @@
      },
      {
          "id": 87,
-         
+         "juzz" : 30,
          "name": "Al A'laa",
          "aya": 19,
          "english": "The Most High",
@@ -962,7 +961,7 @@
      },
      {
          "id": 88,
-         
+         "juzz" : 30,
          "name": "Al Ghaashiyah",
          "aya": 26,
          "english": "The Overwhelming Event",
@@ -973,7 +972,7 @@
      },
      {
          "id": 89,
-         
+         "juzz" : 30,
          "name": "Al Fajr",
          "aya": 30,
          "english": "The Daybreak",
@@ -984,7 +983,7 @@
      },
      {
          "id": 90,
-         
+         "juzz" : 30,
          "name": "Al Balad",
          "aya": 20,
          "english": "The City",
@@ -995,7 +994,7 @@
      },
      {
          "id": 91,
-         
+         "juzz" : 30,
          "name": "Ash Shams",
          "aya": 15,
          "english": "The Sun",
@@ -1006,7 +1005,7 @@
      },
      {
          "id": 92,
-         
+         "juzz" : 30,
          "name": "Al Layl",
          "aya": 21,
          "english": "The Night",
@@ -1017,7 +1016,7 @@
      },
      {
          "id": 93,
-         
+         "juzz" : 30,
          "name": "Ad Dhuha",
          "aya": 11,
          "english": "The Glorious Morning Light",
@@ -1028,7 +1027,7 @@
      },
      {
          "id": 94,
-         
+         "juzz" : 30,
          "name": "Ash Sharh",
          "aya": 8,
          "english": "The Opening Up of the Heart",
@@ -1039,7 +1038,7 @@
      },
      {
          "id": 95,
-         
+         "juzz" : 30,
          "name": "At Teen",
          "aya": 8,
          "english": "The Fig Tree",
@@ -1050,7 +1049,7 @@
      },
      {
          "id": 96,
-         
+         "juzz" : 30,
          "name": "Al Alaq",
          "aya": 19,
          "english": "The Clinging Clot",
@@ -1061,7 +1060,7 @@
      },
      {
          "id": 97,
-         
+         "juzz" : 30,
          "name": "Al Qadr",
          "aya": 5,
          "english": "The Night of Honor",
@@ -1072,7 +1071,7 @@
      },
      {
          "id": 98,
-         
+         "juzz" : 30,
          "name": "Al Bayyinah",
          "aya": 8,
          "english": "The Clear Evidence",
@@ -1084,7 +1083,7 @@
      },
      {
          "id": 99,
-         
+         "juzz" : 30,
          "name": "Az Zalzalah",
          "aya": 8,
          "english": "The Earthquake",
@@ -1095,7 +1094,7 @@
      },
      {
          "id": 100,
-         
+         "juzz" : 30,
          "name": "Al Aadiyaat",
          "aya": 11,
          "english": "The Courser",
@@ -1106,7 +1105,7 @@
      },
      {
          "id": 101,
-         
+         "juzz" : 30,
          "name": "Al Qaari'ah",
          "aya": 11,
          "english": "The Striking Hour",
@@ -1117,7 +1116,7 @@
      },
      {
          "id": 102,
-         
+         "juzz" : 30,
          "name": "At Takaathur",
          "aya": 8,
          "english": "The Piling Up",
@@ -1128,7 +1127,7 @@
      },
      {
          "id": 103,
-         
+         "juzz" : 30,
          "name": "Al Asr",
          "aya": 3,
          "english": "The Time",
@@ -1139,7 +1138,7 @@
      },
      {
          "id": 104,
-         
+         "juzz" : 30,
          "name": "Al Humazah",
          "aya": 9,
          "english": "The Scandalmonger",
@@ -1150,7 +1149,7 @@
      },
      {
          "id": 105,
-         
+         "juzz" : 30,
          "name": "Al Feel",
          "aya": 5,
          "english": "The Elephant",
@@ -1161,7 +1160,7 @@
      },
      {
          "id": 106,
-         
+         "juzz" : 30,
          "name": "Quraysh",
          "aya": 4,
          "english": "The Quraysh",
@@ -1172,7 +1171,7 @@
      },
      {
          "id": 107,
-         
+         "juzz" : 30,
          "name": "Al Maa'oon",
          "aya": 7,
          "english": "The Neighbourly Assistance",
@@ -1183,7 +1182,7 @@
      },
      {
          "id": 108,
-         
+         "juzz" : 30,
          "name": "Al Kawthar",
          "aya": 3,
          "english": "Abundance",
@@ -1194,7 +1193,7 @@
      },
      {
          "id": 109,
-         
+         "juzz" : 30,
          "name": "Al Kaafiroon",
          "aya": 6,
          "english": "The Disbelievers",
@@ -1205,7 +1204,7 @@
      },
      {
          "id": 110,
-         
+         "juzz" : 30,
          "name": "An Nasr",
          "aya": 3,
          "english": "The Help",
@@ -1216,7 +1215,7 @@
      },
      {
          "id": 111,
-         
+         "juzz" : 30,
          "name": "Al Masad",
          "aya": 5,
          "english": "The Plaited Rope",
@@ -1227,7 +1226,7 @@
      },
      {
          "id": 112,
-         
+         "juzz" : 30,
          "name": "Al Ikhlaas",
          "aya": 4,
          "english": "Purity of Faith",
@@ -1238,7 +1237,7 @@
      },
      {
          "id": 113,
-         
+         "juzz" : 30,
          "name": "Al Falaq",
          "aya": 5,
          "english": "The Rising Dawn",
@@ -1249,7 +1248,7 @@
      },
      {
          "id": 114,
-         
+         "juzz" : 30,
          "name": "An Naas",
          "aya": 6,
          "english": "Mankind",
