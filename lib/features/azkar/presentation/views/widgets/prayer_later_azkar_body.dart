@@ -1,0 +1,37 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:skeletonizer/skeletonizer.dart';
+import 'package:theker_app/features/azkar/presentation/views/widgets/azkar_list_view.dart';
+import 'package:theker_app/features/azkar/presentation/manger/get_azkar_cubit/get_azkar_cubit.dart';
+import 'package:theker_app/features/azkar/presentation/manger/get_azkar_cubit/get_azkar_states.dart';
+
+class PrayerLaterAzkarViewBody extends StatefulWidget {
+  const PrayerLaterAzkarViewBody({super.key});
+
+  @override
+  State<PrayerLaterAzkarViewBody> createState() => _PrayerLaterAzkarViewBodyState();
+}
+
+class _PrayerLaterAzkarViewBodyState extends State<PrayerLaterAzkarViewBody> {
+  @override
+  void initState() {
+    super.initState();
+    BlocProvider.of<GetAzkarCubit>(context).getAzkarCubit(categoryAzkarCubit: 'prayer_later_azkar');
+  }
+  @override
+  Widget build(BuildContext context) {
+     return BlocBuilder<GetAzkarCubit, GetAzkarStates>(
+      builder: (context, state) {
+        if (state is AzkarFaliure) {
+          return const Center(child: Text('No later prayer Azkar Now'));
+        }
+        bool isLoading = state is! AzkarSucess;
+        var data = BlocProvider.of<GetAzkarCubit>(context).azkarCubitList;
+        return Skeletonizer(
+          enabled: isLoading,
+          child: AzkarListViewBuilder(data: data),
+        );
+      },
+    );
+  }
+}
